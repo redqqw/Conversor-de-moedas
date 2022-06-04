@@ -1,5 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;700&display=swap');
+
 body {
-  font-family: "Roboto Mono", monospace;
+  font-family: 'Noto Sans', sans-serif;
   min-height: 400px;
   background-color: #111111;
   background-size: 100vh;
@@ -11,16 +13,21 @@ body {
   text-align: center;
   padding: 20px;
   height: 100vh;
+  margin-top: 15vw;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-title {
   color: #ffffff;
   margin: 0 0 5px;
+  user-select: none;
 }
 
 .page-subtitle {
   color: #fffff1;
   margin-top: 5px;
+  user-select: none;  
 }
 
 .page-logo {
@@ -45,14 +52,26 @@ label {
 }
 
 button {
+  width: 9vw;
+  height: 3vh;
   margin-top: 12px;
   padding: 4px 8px;
   border-radius: 10px;
   background: #ffffff;
+  outline: none;
+  user-select: none;
+  border: none;
+  text-align: center;
+  font-size: 85%;
+  font-weight: 500;
 }
 button:hover {
-  background: #0001;
-  color: white;
+  background-color: #5793f5;
+    opacity: 1;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    transform: translateX(1px) scale(0.95);
 }
 
 h2 {
